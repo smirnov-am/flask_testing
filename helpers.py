@@ -15,6 +15,7 @@ import hashlib
 import iterltools
 import unidiff
 import yaml
+import flask
 from turbot import utils
 
 
