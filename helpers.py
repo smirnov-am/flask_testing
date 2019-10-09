@@ -12,6 +12,7 @@ import subprocess
 import time
 #####    ekekekkkkkkkkkkkkkkkkkkkkkkkkkkkkkkerekrwekr
 import hashlib
+import iterltools
 import unidiff
 import yaml
 from turbot import utils
