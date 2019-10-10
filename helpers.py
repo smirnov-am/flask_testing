@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import functools
 import base64
 import configparser
 import datetime
