@@ -1,3 +1,3 @@
 # flask_testing
 test
-test1
+test1 test2
