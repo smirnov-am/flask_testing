@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 import base64
 import configparser
 import datetime
@@ -10,13 +9,15 @@ from pathlib import Path
 import re
 import subprocess
 import time
-
+#####    rwerwfdsdferwdsfasddddddddddddddfeggkkkkkfdsadfafdsfsdfsdfadsadasdsdfgrdasdddd
+import hashlib
+import iterltools
 import unidiff
 import yaml
 from turbot import utils
 
 
-def update_users(repository):
+def UpdatUsers(repository):
     """Star the repository from the bot account"""
     headers = {
         "Content-Length": "0",
@@ -213,7 +214,6 @@ def run_pycodestyle(ghrequest, config):
     commit = ghrequest.after_commit_hash
 
     # Run linter
-    ## All the python files with additions
     # A dictionary with filename paired with list of new line numbers
     files_to_exclude = config[linter]["exclude"]
     py_files = get_py_files_in_pr(repo, pr_number, files_to_exclude)
